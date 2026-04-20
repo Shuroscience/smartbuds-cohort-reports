@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cohort Report: Banana vs Prior Users</title>
+<style>
+  body  { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+           max-width:960px;margin:0 auto;padding:40px 20px;color:#1a1a2e;background:#f9f9fb; }
+  h1    { font-size:1.6rem;border-bottom:3px solid #4a90d9;padding-bottom:10px; }
+  h2    { font-size:1.1rem;color:#2c3e50;margin-top:36px;background:#eef3fb;
+           padding:8px 12px;border-left:4px solid #4a90d9;border-radius:0 4px 4px 0; }
+  .meta { color:#777;font-size:0.85rem;margin-bottom:20px; }
+  .callout      { background:#fff3cd;border:1px solid #ffc107;border-radius:6px;
+                   padding:12px 16px;font-size:0.88rem;margin:14px 0;color:#856404; }
+  .callout strong { color:#664d03; }
+  .callout-blue { background:#cfe2ff;border-color:#4a90d9;color:#084298; }
+  .callout-blue strong { color:#052c65; }
+  .grid2  { display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0; }
+  .card   { background:white;border-radius:8px;padding:16px 20px;border:1px solid #dde3f0; }
+  .card h4 { margin:0 0 4px 0;font-size:0.85rem;color:#666;font-weight:500; }
+  .card .num { font-size:2rem;font-weight:700;color:#2c3e50; }
+  .card .sub { font-size:0.8rem;color:#888;margin-top:2px;margin-bottom:8px; }
+  table   { border-collapse:collapse;width:100%;margin:14px 0;font-size:0.91rem; }
+  th      { background:#2c3e50;color:white;padding:9px 14px;text-align:left;font-weight:500; }
+  td      { padding:8px 14px;border-bottom:1px solid #e8e8e8; }
+  tr:nth-child(even) { background:#f5f8ff; }
+  .highlight-row td { background:#fffbea !important;font-weight:600; }
+  .pos  { color:#198754;font-weight:600; }
+  .neg  { color:#dc3545;font-weight:600; }
+  .neu  { color:#6c757d; }
+  .coverage-badge { display:inline-block;background:#e9ecef;border-radius:10px;
+                     padding:2px 10px;font-size:0.8rem;color:#495057;margin-left:8px; }
+  footer { margin-top:48px;font-size:0.8rem;color:#aaa;border-top:1px solid #e0e0e0;padding-top:16px; }
+</style>
+</head>
+<body>
+<h1>Cohort Report — <em>Banana</em> vs Prior Users</h1>
+<p class="meta">
+  Analysis date: 2026-04-20 &nbsp;·&nbsp;
+  Banana cohort start: 2026-04-18 &nbsp;·&nbsp;
+  Smartbuds app &nbsp;·&nbsp; Internal users excluded
+</p>
+
+<!-- ── COHORT SIZE CARDS ── -->
+<div class="grid2">
+  <div class="card">
+    <h4>🔵 ALL PRIOR USERS</h4>
+    <div class="num">1,679</div>
+    <div class="sub">Users who onboarded before 2026-04-18</div>
+    <p style="font-size:0.75rem;color:#999;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin:12px 0 0 0;">When They Onboarded</p>
+    <svg width="100%" viewBox="0 0 280 100" style="display:block;overflow:visible;margin-top:4px;">
+<defs><linearGradient id="lcgold" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#4a90d9" stop-opacity="0.22"/>
+<stop offset="100%" stop-color="#4a90d9" stop-opacity="0.02"/>
+</linearGradient></defs>
+<polygon points="8.0,74 8.0,59.1 96.0,36.6 184.0,60.9 272.0,20.0 272.0,74" fill="url(#lcgold)"/>
+<polyline points="8.0,59.1 96.0,36.6 184.0,60.9 272.0,20.0" fill="none" stroke="#4a90d9" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="8.0" cy="59.1" r="2.5" fill="#4a90d9"/>
+<text x="8.0" y="96" text-anchor="middle" font-size="8" fill="#888">Apr</text>
+<circle cx="96.0" cy="36.6" r="2.5" fill="#4a90d9"/>
+<text x="96.0" y="96" text-anchor="middle" font-size="8" fill="#888">Feb</text>
+<circle cx="184.0" cy="60.9" r="2.5" fill="#4a90d9"/>
+<text x="184.0" y="96" text-anchor="middle" font-size="8" fill="#888">Jan</text>
+<circle cx="272.0" cy="20.0" r="2.5" fill="#4a90d9"/>
+<text x="272.0" y="96" text-anchor="middle" font-size="8" fill="#888">Mar</text>
+</svg>
+  </div>
+  <div class="card">
+    <h4>🍌 BANANA</h4>
+    <div class="num">21</div>
+    <div class="sub">Users who onboarded 2026-04-18 or later</div>
+    <p style="font-size:0.75rem;color:#999;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin:12px 0 0 0;">When They Onboarded</p>
+    <svg width="100%" viewBox="0 0 280 100" style="display:block;overflow:visible;margin-top:4px;">
+<defs><linearGradient id="lcgnew" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#f07030" stop-opacity="0.22"/>
+<stop offset="100%" stop-color="#f07030" stop-opacity="0.02"/>
+</linearGradient></defs>
+<polygon points="8.0,74 8.0,20.0 140.0,26.8 272.0,33.5 272.0,74" fill="url(#lcgnew)"/>
+<polyline points="8.0,20.0 140.0,26.8 272.0,33.5" fill="none" stroke="#f07030" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="8.0" cy="20.0" r="2.5" fill="#f07030"/>
+<text x="8.0" y="96" text-anchor="middle" font-size="8" fill="#888">4/18</text>
+<circle cx="140.0" cy="26.8" r="2.5" fill="#f07030"/>
+<text x="140.0" y="96" text-anchor="middle" font-size="8" fill="#888">4/19</text>
+<circle cx="272.0" cy="33.5" r="2.5" fill="#f07030"/>
+<text x="272.0" y="96" text-anchor="middle" font-size="8" fill="#888">4/20</text>
+</svg>
+  </div>
+</div>
+
+<div class="callout callout-blue">
+  <strong>Data coverage:</strong>
+  7-day metrics: 0/21 Banana users (0.0%).
+  14-day metrics: 0/21 (0.0%).
+  28-day metrics (Rot Rate): 0/21 (0.0%).
+  All prior-cohort users qualify for all windows.
+</div>
+
+<!-- ── GOOD FRUIT RATE & ROT RATE ── -->
+<h2>Habit + Durability Signals</h2>
+<div class="callout">
+  <strong>Good Fruit Rate</strong> = % of cohort who logged ≥5 sessions in their first 14 days — the habit-formation signal. &nbsp;|&nbsp;
+  <strong>Rot Rate</strong> = of those good-fruit users, % who went inactive (0 sessions) in days 15–28 — the durability signal.
+  Apple baseline hypothesis: ~35% Good Fruit Rate.
+</div>
+<div class="grid2">
+  <div class="card">
+    <h4>Good Fruit Rate</h4>
+    <div style="font-size:0.78rem;color:#888;margin-bottom:12px;">% reaching ≥5 sessions in first 14 days &nbsp;·&nbsp; 14-day eligible users only</div>
+    <div style="display:flex;align-items:baseline;gap:24px;flex-wrap:wrap;">
+      <div>
+        <div style="font-size:0.72rem;font-weight:700;color:#4a90d9;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;">All prior users</div>
+        <div style="font-size:2rem;font-weight:700;color:#2c3e50;">32.1%</div>
+        <div style="font-size:0.78rem;color:#999;">n=1,542</div>
+      </div>
+      <div>
+        <div style="font-size:0.72rem;font-weight:700;color:#f07030;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;">Banana</div>
+        <div style="font-size:2rem;font-weight:700;color:#2c3e50;">0%</div>
+        <div style="font-size:0.78rem;color:#999;">n=0</div>
+      </div>
+      <div style="font-size:1.3rem;font-weight:700;"><span class="neg">↓ -32.1 pts</span></div>
+    </div>
+    <div style="margin-top:10px;font-size:0.78rem;color:#999;border-top:1px solid #f0f0f0;padding-top:8px;">Baseline hypothesis (Apple): ~35%</div>
+  </div>
+  <div class="card">
+    <h4>Rot Rate</h4>
+    <div style="font-size:0.78rem;color:#888;margin-bottom:12px;">Of good-fruit users, % with 0 sessions in days 15–28 &nbsp;·&nbsp; 28-day eligible only</div>
+    <div style="display:flex;align-items:baseline;gap:24px;flex-wrap:wrap;"><div><div style="font-size:0.72rem;font-weight:700;color:#4a90d9;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;">All prior users</div><div style="font-size:2rem;font-weight:700;color:#2c3e50;">32.6%</div><div style="font-size:0.78rem;color:#999;">n=479 good fruit</div></div><div><div style="font-size:0.72rem;font-weight:700;color:#f07030;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;">Banana</div><div style="font-size:1.2rem;color:#aaa;">—</div><div style="font-size:0.78rem;color:#999;">n=0 good fruit</div></div></div>
+    <div style="margin-top:10px;font-size:0.78rem;color:#856404;border-top:1px solid #f0f0f0;padding-top:8px;">Only 0.0% of Banana users have reached 28 days — check back for a more stable read.</div>
+  </div>
+</div>
+
+<!-- ── FIRST 7 DAYS ── -->
+<h2>First 7 Days
+  <span class="coverage-badge">Banana: 0/21 (0.0%)</span>
+</h2>
+
+<table>
+  <tr><th>Metric</th><th>All prior users (n=1,633)</th><th>Banana (n=0)</th><th>Change</th></tr>
+  <tr class="highlight-row"><td>Median sessions</td><td>2</td><td>0</td><td><span class="neg">↓ -100%</span></td></tr>
+
+  <tr><td>Mean sessions</td><td>2.5</td><td>0</td><td><span class="neg">↓ -100%</span></td></tr>
+
+  <tr><td>% with ≥1 session</td><td>64.5%</td><td>0%</td><td><span class="neg">↓ -64.5 pts</span></td></tr>
+
+  <tr><td>% with ≥3 sessions</td><td>38.0%</td><td>0%</td><td><span class="neg">↓ -38.0 pts</span></td></tr>
+
+  <tr><td>% with 0 sessions</td><td>35.5%</td><td>0%</td><td><span class="pos">↓ -35.5 pts</span></td></tr>
+
+  <tr><td>Median app opens</td><td>28</td><td>0</td><td><span class="neg">↓ -100%</span></td></tr>
+
+  <tr><td>Median days with app open</td><td>4</td><td>0</td><td><span class="neg">↓ -100%</span></td></tr>
+
+  <tr><td>Median total app events</td><td>352</td><td>0</td><td><span class="neg">↓ -100%</span></td></tr>
+
+</table>
+
+<p style="font-size:0.85rem;color:#555;margin:16px 0 6px 0;font-weight:600;">Sessions logged — first 7 days</p>
+<div style="display:flex;gap:16px;font-size:0.78rem;color:#555;margin-bottom:8px;">  <span><span style="display:inline-block;width:12px;height:12px;background:#4a90d9;border-radius:2px;margin-right:4px;vertical-align:middle;"></span>All prior users</span>  <span><span style="display:inline-block;width:12px;height:12px;background:#f07030;border-radius:2px;margin-right:4px;vertical-align:middle;"></span>Banana</span></div><div style="display:flex;align-items:flex-end;height:120px;gap:6px;border-bottom:1px solid #e8e8e8;padding-top:16px;"><div style="display:flex;flex-direction:column;align-items:center;flex:1;">  <div style="display:flex;align-items:flex-end;gap:3px;width:100%;justify-content:center;">    <div style="display:flex;flex-direction:column;align-items:center;">      <span style="font-size:0.68rem;color:#4a90d9;margin-bottom:2px;font-weight:600;">36%</span>      <div style="width:18px;height:100px;background:#4a90d9;border-radius:2px 2px 0 0;"></div>    </div>    <div style="display:flex;flex-direction:column;align-items:center;">      <span style="font-size:0.68rem;color:#f07030;margin-bottom:2px;font-weight:600;">0%</span>      <div style="width:18px;height:2px;background:#f07030;border-radius:2px 2px 0 0;"></div>    </div>  </div>  <div style="font-size:0.78rem;color:#555;margin-top:6px;text-align:center;">0</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;">  <div style="display:flex;align-items:flex-end;gap:3px;width:100%;justify-content:center;">    <div style="display:flex;flex-direction:column;align-items:center;">      <span style="font-size:0.68rem;color:#4a90d9;margin-bottom:2px;font-weight:600;">14%</span>      <div style="width:18px;height:39px;background:#4a90d9;border-radius:2px 2px 0 0;"></div>    </div>    <div style="display:flex;flex-direction:column;align-items:center;">      <span style="font-size:0.68rem;color:#f07030;margin-bottom:2px;font-weight:600;">0%</span>      <div style="width:18px;height:2px;background:#f07030;border-radius:2px 2px 0 0;"></div>    </div>  </div>  <div style="font-size:0.78rem;color:#555;margin-top:6px;text-align:center;">1</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;">  <div style="display:flex;align-items:flex-end;gap:3px;width:100%;justify-content:center;">    <div style="display:flex;flex-direction:column;align-items:center;">      <span style="font-size:0.68rem;color:#4a90d9;margin-bottom:2px;font-weight:600;">13%</span>      <div style="width:18px;height:36px;background:#4a90d9;border-radius:2px 2px 0 0;"></div>    </div>    <div style="display:flex;flex-direction:column;align-items:center;">      <span style="font-size:0.68rem;color:#f07030;margin-bottom:2px;font-weight:600;">0%</span>      <div style="width:18px;height:2px;background:#f07030;border-radius:2px 2px 0 0;"></div>    </div>  </div>  <div style="font-size:0.78rem;color:#555;margin-top:6px;text-align:center;">2</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;">  <div style="display:flex;align-items:flex-end;gap:3px;width:100%;justify-content:center;">    <div style="display:flex;flex-direction:column;align-items:center;">      <span style="font-size:0.68rem;color:#4a90d9;margin-bottom:2px;font-weight:600;">8%</span>      <div style="width:18px;height:22px;background:#4a90d9;border-radius:2px 2px 0 0;"></div>    </div>    <div style="display:flex;flex-direction:column;align-items:center;">      <span style="font-size:0.68rem;color:#f07030;margin-bottom:2px;font-weight:600;">0%</span>      <div style="width:18px;height:2px;background:#f07030;border-radius:2px 2px 0 0;"></div>    </div>  </div>  <div style="font-size:0.78rem;color:#555;margin-top:6px;text-align:center;">3</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;">  <div style="display:flex;align-items:flex-end;gap:3px;width:100%;justify-content:center;">    <div style="display:flex;flex-direction:column;align-items:center;">      <span style="font-size:0.68rem;color:#4a90d9;margin-bottom:2px;font-weight:600;">12%</span>      <div style="width:18px;height:33px;background:#4a90d9;border-radius:2px 2px 0 0;"></div>    </div>    <div style="display:flex;flex-direction:column;align-items:center;">      <span style="font-size:0.68rem;color:#f07030;margin-bottom:2px;font-weight:600;">0%</span>      <div style="width:18px;height:2px;background:#f07030;border-radius:2px 2px 0 0;"></div>    </div>  </div>  <div style="font-size:0.78rem;color:#555;margin-top:6px;text-align:center;">4–5</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;">  <div style="display:flex;align-items:flex-end;gap:3px;width:100%;justify-content:center;">    <div style="display:flex;flex-direction:column;align-items:center;">      <span style="font-size:0.68rem;color:#4a90d9;margin-bottom:2px;font-weight:600;">18%</span>      <div style="width:18px;height:50px;background:#4a90d9;border-radius:2px 2px 0 0;"></div>    </div>    <div style="display:flex;flex-direction:column;align-items:center;">      <span style="font-size:0.68rem;color:#f07030;margin-bottom:2px;font-weight:600;">0%</span>      <div style="width:18px;height:2px;background:#f07030;border-radius:2px 2px 0 0;"></div>    </div>  </div>  <div style="font-size:0.78rem;color:#555;margin-top:6px;text-align:center;">6+</div></div></div>
+
+<!-- ── FIRST 14 DAYS ── -->
+<h2>First 14 Days
+  <span class="coverage-badge">Banana: 0/21 (0.0%)</span>
+</h2>
+<div class="callout"><strong>Heads up:</strong> Only 0.0% of the Banana cohort has reached 14 days yet. These numbers will shift as more users accumulate data — check back for a more stable read.</div>
+
+<table>
+  <tr><th>Metric</th><th>All prior users (n=1,542)</th><th>Banana (n=0)</th><th>Change</th></tr>
+  <tr class="highlight-row"><td>Median sessions</td><td>2.0</td><td>0</td><td><span class="neg">↓ -100%</span></td></tr>
+
+  <tr><td>Mean sessions</td><td>4.0</td><td>0</td><td><span class="neg">↓ -100%</span></td></tr>
+
+  <tr><td>% with ≥1 session</td><td>71.6%</td><td>0%</td><td><span class="neg">↓ -71.6 pts</span></td></tr>
+
+  <tr><td>% with ≥3 sessions</td><td>46.1%</td><td>0%</td><td><span class="neg">↓ -46.1 pts</span></td></tr>
+
+  <tr><td>% with 0 sessions</td><td>28.4%</td><td>0%</td><td><span class="pos">↓ -28.4 pts</span></td></tr>
+
+  <tr><td>Median app opens</td><td>46.5</td><td>0</td><td><span class="neg">↓ -100%</span></td></tr>
+
+  <tr><td>Median days with app open</td><td>7.0</td><td>0</td><td><span class="neg">↓ -100%</span></td></tr>
+
+  <tr><td>Median total app events</td><td>510.5</td><td>0</td><td><span class="neg">↓ -100%</span></td></tr>
+
+</table>
+
+<p style="font-size:0.85rem;color:#555;margin:16px 0 6px 0;font-weight:600;">Sessions logged — first 14 days</p>
+<div style="display:flex;gap:16px;font-size:0.78rem;color:#555;margin-bottom:8px;">  <span><span style="display:inline-block;width:12px;height:12px;background:#4a90d9;border-radius:2px;margin-right:4px;vertical-align:middle;"></span>All prior users</span>  <span><span style="display:inline-block;width:12px;height:12px;background:#f07030;border-radius:2px;margin-right:4px;vertical-align:middle;"></span>Banana</span></div><div style="display:flex;align-items:flex-end;height:120px;gap:6px;border-bottom:1px solid #e8e8e8;padding-top:16px;"><div style="display:flex;flex-direction:column;align-items:center;flex:1;">  <div style="display:flex;align-items:flex-end;gap:3px;width:100%;justify-content:center;">    <div style="display:flex;flex-direction:column;align-items:center;">      <span style="font-size:0.68rem;color:#4a90d9;margin-bottom:2px;font-weight:600;">28%</span>      <div style="width:18px;height:100px;background:#4a90d9;border-radius:2px 2px 0 0;"></div>    </div>    <div style="display:flex;flex-direction:column;align-items:center;">      <span style="font-size:0.68rem;color:#f07030;margin-bottom:2px;font-weight:600;">0%</span>      <div style="width:18px;height:2px;background:#f07030;border-radius:2px 2px 0 0;"></div>    </div>  </div>  <div style="font-size:0.78rem;color:#555;margin-top:6px;text-align:center;">0</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;">  <div style="display:flex;align-items:flex-end;gap:3px;width:100%;justify-content:center;">    <div style="display:flex;flex-direction:column;align-items:center;">      <span style="font-size:0.68rem;color:#4a90d9;margin-bottom:2px;font-weight:600;">14%</span>      <div style="width:18px;height:50px;background:#4a90d9;border-radius:2px 2px 0 0;"></div>    </div>    <div style="display:flex;flex-direction:column;align-items:center;">      <span style="font-size:0.68rem;color:#f07030;margin-bottom:2px;font-weight:600;">0%</span>      <div style="width:18px;height:2px;background:#f07030;border-radius:2px 2px 0 0;"></div>    </div>  </div>  <div style="font-size:0.78rem;color:#555;margin-top:6px;text-align:center;">1</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;">  <div style="display:flex;align-items:flex-end;gap:3px;width:100%;justify-content:center;">    <div style="display:flex;flex-direction:column;align-items:center;">      <span style="font-size:0.68rem;color:#4a90d9;margin-bottom:2px;font-weight:600;">12%</span>      <div style="width:18px;height:43px;background:#4a90d9;border-radius:2px 2px 0 0;"></div>    </div>    <div style="display:flex;flex-direction:column;align-items:center;">      <span style="font-size:0.68rem;color:#f07030;margin-bottom:2px;font-weight:600;">0%</span>      <div style="width:18px;height:2px;background:#f07030;border-radius:2px 2px 0 0;"></div>    </div>  </div>  <div style="font-size:0.78rem;color:#555;margin-top:6px;text-align:center;">2</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;">  <div style="display:flex;align-items:flex-end;gap:3px;width:100%;justify-content:center;">    <div style="display:flex;flex-direction:column;align-items:center;">      <span style="font-size:0.68rem;color:#4a90d9;margin-bottom:2px;font-weight:600;">8%</span>      <div style="width:18px;height:29px;background:#4a90d9;border-radius:2px 2px 0 0;"></div>    </div>    <div style="display:flex;flex-direction:column;align-items:center;">      <span style="font-size:0.68rem;color:#f07030;margin-bottom:2px;font-weight:600;">0%</span>      <div style="width:18px;height:2px;background:#f07030;border-radius:2px 2px 0 0;"></div>    </div>  </div>  <div style="font-size:0.78rem;color:#555;margin-top:6px;text-align:center;">3</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;">  <div style="display:flex;align-items:flex-end;gap:3px;width:100%;justify-content:center;">    <div style="display:flex;flex-direction:column;align-items:center;">      <span style="font-size:0.68rem;color:#4a90d9;margin-bottom:2px;font-weight:600;">11%</span>      <div style="width:18px;height:39px;background:#4a90d9;border-radius:2px 2px 0 0;"></div>    </div>    <div style="display:flex;flex-direction:column;align-items:center;">      <span style="font-size:0.68rem;color:#f07030;margin-bottom:2px;font-weight:600;">0%</span>      <div style="width:18px;height:2px;background:#f07030;border-radius:2px 2px 0 0;"></div>    </div>  </div>  <div style="font-size:0.78rem;color:#555;margin-top:6px;text-align:center;">4–5</div></div><div style="display:flex;flex-direction:column;align-items:center;flex:1;">  <div style="display:flex;align-items:flex-end;gap:3px;width:100%;justify-content:center;">    <div style="display:flex;flex-direction:column;align-items:center;">      <span style="font-size:0.68rem;color:#4a90d9;margin-bottom:2px;font-weight:600;">27%</span>      <div style="width:18px;height:96px;background:#4a90d9;border-radius:2px 2px 0 0;"></div>    </div>    <div style="display:flex;flex-direction:column;align-items:center;">      <span style="font-size:0.68rem;color:#f07030;margin-bottom:2px;font-weight:600;">0%</span>      <div style="width:18px;height:2px;background:#f07030;border-radius:2px 2px 0 0;"></div>    </div>  </div>  <div style="font-size:0.78rem;color:#555;margin-top:6px;text-align:center;">6+</div></div></div>
+
+<!-- ── WHAT WAS NEW ── -->
+
+
+<footer>
+  Report generated 2026-04-20 16:22 &nbsp;·&nbsp;
+  Cohort: Banana (start 2026-04-18) &nbsp;·&nbsp;
+  Data source: Mixpanel &nbsp;·&nbsp; Excludes Internal cohort + nextsense.io emails
+</footer>
+</body>
+</html>
