@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Cohort Report: Banana vs Prior Users</title>
+<title>Cohort Report: Banana vs Apple vs Prior Users</title>
 <style>
   body  { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
            max-width:960px;margin:0 auto;padding:40px 20px;color:#1a1a2e;background:#f9f9fb; }
@@ -34,7 +34,7 @@
 </style>
 </head>
 <body>
-<h1>Cohort Report — <em>Banana</em> vs Prior Users</h1>
+<h1>Cohort Report — <em>Banana</em> vs <em>Apple</em> vs All Prior Users</h1>
 <p class="meta">
   Analysis date: 2026-04-29 &nbsp;·&nbsp;
   Banana cohort start: 2026-04-18 &nbsp;·&nbsp;
@@ -42,26 +42,25 @@
 </p>
 
 <!-- ── COHORT SIZE CARDS ── -->
-<div class="grid2">
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin:16px 0;">
   <div class="card">
     <h4>🔵 ALL PRIOR USERS</h4>
     <div class="num">1,979</div>
-    <div class="sub">Users who onboarded before 2026-04-18</div>
+    <div class="sub">Onboarded before 2026-03-26</div>
+  </div>
+  <div class="card">
+    <h4>🍎 APPLE</h4>
+    <div class="num">337</div>
+    <div class="sub">Onboarded 2026-03-26–2026-04-18</div>
   </div>
   <div class="card">
     <h4>🍌 BANANA</h4>
     <div class="num">127</div>
-    <div class="sub">Users who onboarded 2026-04-18 or later</div>
+    <div class="sub">Onboarded 2026-04-18 or later</div>
   </div>
 </div>
 
-<div class="callout callout-blue">
-  <strong>Data coverage:</strong>
-  7-day metrics: 66/127 Banana users (52.0%).
-  14-day metrics: 0/127 (0.0%).
-  28-day metrics (Rot Rate): 0/127 (0.0%).
-  All prior-cohort users qualify for all windows.
-</div>
+<div class="callout callout-blue"><strong>Data coverage:</strong> Apple: 337/337 have 7-day data (100.0%), 313/337 have 14-day (92.9%). &nbsp;·&nbsp; Banana: 66/127 have 7-day data (52.0%), 0/127 have 14-day (0.0%), 0/127 have 28-day / Rot Rate (0.0%). All prior-cohort users qualify for all windows.</div>
 
 <!-- ── GOOD FRUIT RATE & ROT RATE ── -->
 <h2>Habit + Durability Signals</h2>
@@ -79,13 +78,15 @@
         <div style="font-size:0.72rem;font-weight:700;color:#4a90d9;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;">All prior users</div>
         <div style="font-size:2rem;font-weight:700;color:#2c3e50;">31.3%</div>
         <div style="font-size:0.78rem;color:#999;">n=1955</div>
-      </div>
-      <div>
+      </div><div>
+        <div style="font-size:0.72rem;font-weight:700;color:#27ae60;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;">Apple</div>
+        <div style="font-size:2rem;font-weight:700;color:#2c3e50;">36.7%</div>
+        <div style="font-size:0.78rem;color:#999;">n=313</div>
+      </div><div>
         <div style="font-size:0.72rem;font-weight:700;color:#f07030;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;">Banana</div>
-        <div style="font-size:2rem;font-weight:700;color:#2c3e50;">0%</div>
+        <div style="font-size:2rem;font-weight:700;color:#2c3e50;">—</div>
         <div style="font-size:0.78rem;color:#999;">n=0</div>
-      </div>
-      <div style="font-size:1.3rem;font-weight:700;"><span class="neg">↓ -31.3 pts</span></div>
+      </div><div style="font-size:1.3rem;font-weight:700;"><span class="neg">↓ -36.7 pts</span></div>
     </div>
     <div style="margin-top:10px;font-size:0.78rem;color:#999;border-top:1px solid #f0f0f0;padding-top:8px;">Baseline hypothesis (Apple): ~35%</div>
   </div>
@@ -97,8 +98,11 @@
         <div style="font-size:0.72rem;font-weight:700;color:#4a90d9;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;">All prior users</div>
         <div style="font-size:2rem;font-weight:700;color:#2c3e50;">0.0%</div>
         <div style="font-size:0.78rem;color:#999;">n=611 good fruit</div>
-      </div>
-      <div>
+      </div><div>
+        <div style="font-size:0.72rem;font-weight:700;color:#27ae60;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;">Apple</div>
+        <div style="font-size:2rem;font-weight:700;color:#2c3e50;">0.0%</div>
+        <div style="font-size:0.78rem;color:#999;">n=115 good fruit</div>
+      </div><div>
         <div style="font-size:0.72rem;font-weight:700;color:#f07030;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;">Banana</div>
         <div style="font-size:1.2rem;font-weight:700;color:#2c3e50;">—</div>
         <div style="font-size:0.78rem;color:#999;">n=0 good fruit</div>
@@ -114,50 +118,42 @@
 </h2>
 
 <table>
-  <tr><th>Metric</th><th>All prior users (n=1,979)</th><th>Banana (n=66)</th><th>Change</th></tr>
-  <tr class="highlight-row"><td>Median sessions</td><td>2</td><td>2.0</td><td><span class="pos">↑ +0%</span></td></tr>
-
-  <tr><td>Mean sessions</td><td>2.5</td><td>3.1</td><td><span class="pos">↑ +24%</span></td></tr>
-
-  <tr><td>% with ≥1 session</td><td>65.7%</td><td>75.8%</td><td><span class="pos">↑ +10.1 pts</span></td></tr>
-
-  <tr><td>% with ≥3 sessions</td><td>39.5%</td><td>47.0%</td><td><span class="pos">↑ +7.5 pts</span></td></tr>
-
-  <tr><td>% with 0 sessions</td><td>34.3%</td><td>24.2%</td><td><span class="pos">↓ -10.1 pts</span></td></tr>
-
-  <tr><td>Median app opens</td><td>30</td><td>42.5</td><td><span class="pos">↑ +42%</span></td></tr>
-
-  <tr><td>Median days with app open</td><td>4</td><td>6.0</td><td><span class="pos">↑ +50%</span></td></tr>
-
-  <tr><td>Median total app events</td><td>380</td><td>475.5</td><td><span class="pos">↑ +25%</span></td></tr>
-
+  <tr><th>Metric</th><th>All prior users (n=1,979)</th><th>Apple (n=337)</th><th>Banana (n=66)</th><th>Change (Apple→Banana)</th></tr>
+  <tr class="highlight-row"><td>Median sessions</td><td>2</td><td>2</td><td>2.0</td><td><span class="pos">↑ +0%</span></td></tr>
+  <tr><td>Mean sessions</td><td>2.5</td><td>2.9</td><td>3.1</td><td><span class="pos">↑ +7%</span></td></tr>
+  <tr><td>% with ≥1 session</td><td>65.7%</td><td>73.3%</td><td>75.8%</td><td><span class="pos">↑ +2.5 pts</span></td></tr>
+  <tr><td>% with ≥3 sessions</td><td>39.5%</td><td>47.5%</td><td>47.0%</td><td><span class="neg">↓ -0.5 pts</span></td></tr>
+  <tr><td>% with 0 sessions</td><td>34.3%</td><td>26.7%</td><td>24.2%</td><td><span class="pos">↓ -2.5 pts</span></td></tr>
+  <tr><td>Median app opens</td><td>30</td><td>39</td><td>42.5</td><td><span class="pos">↑ +9%</span></td></tr>
+  <tr><td>Median days with app open</td><td>4</td><td>6</td><td>6.0</td><td><span class="pos">↑ +0%</span></td></tr>
+  <tr><td>Median total app events</td><td>380</td><td>572</td><td>475.5</td><td><span class="neg">↓ -17%</span></td></tr>
 </table>
 
 <p style="font-size:0.85rem;color:#555;margin:16px 0 6px 0;font-weight:600;">Sessions logged — first 7 days</p>
 <div style="display:flex;gap:16px;font-size:0.78rem;color:#555;margin-bottom:8px;">
-  <span><span style="display:inline-block;width:12px;height:12px;background:#4a90d9;border-radius:2px;margin-right:4px;vertical-align:middle;"></span>All prior users</span>
+  <span><span style="display:inline-block;width:12px;height:12px;background:#4a90d9;border-radius:2px;margin-right:4px;vertical-align:middle;"></span>Apple</span>
   <span><span style="display:inline-block;width:12px;height:12px;background:#f07030;border-radius:2px;margin-right:4px;vertical-align:middle;"></span>Banana</span>
 </div><div style="display:flex;align-items:flex-end;height:120px;gap:6px;border-bottom:1px solid #e8e8e8;padding-top:16px;"><div style="display:flex;flex-direction:column;align-items:center;flex:1;">
   <div style="display:flex;align-items:flex-end;gap:3px;width:100%;justify-content:center;">
     <div style="display:flex;flex-direction:column;align-items:center;">
-      <span style="font-size:0.68rem;color:#4a90d9;margin-bottom:2px;font-weight:600;">34%</span>
+      <span style="font-size:0.68rem;color:#4a90d9;margin-bottom:2px;font-weight:600;">27%</span>
       <div style="width:18px;height:100px;background:#4a90d9;border-radius:2px 2px 0 0;"></div>
     </div>
     <div style="display:flex;flex-direction:column;align-items:center;">
       <span style="font-size:0.68rem;color:#f07030;margin-bottom:2px;font-weight:600;">24%</span>
-      <div style="width:18px;height:71px;background:#f07030;border-radius:2px 2px 0 0;"></div>
+      <div style="width:18px;height:89px;background:#f07030;border-radius:2px 2px 0 0;"></div>
     </div>
   </div>
   <div style="font-size:0.78rem;color:#555;margin-top:6px;text-align:center;">0</div>
 </div><div style="display:flex;flex-direction:column;align-items:center;flex:1;">
   <div style="display:flex;align-items:flex-end;gap:3px;width:100%;justify-content:center;">
     <div style="display:flex;flex-direction:column;align-items:center;">
-      <span style="font-size:0.68rem;color:#4a90d9;margin-bottom:2px;font-weight:600;">14%</span>
-      <div style="width:18px;height:41px;background:#4a90d9;border-radius:2px 2px 0 0;"></div>
+      <span style="font-size:0.68rem;color:#4a90d9;margin-bottom:2px;font-weight:600;">13%</span>
+      <div style="width:18px;height:48px;background:#4a90d9;border-radius:2px 2px 0 0;"></div>
     </div>
     <div style="display:flex;flex-direction:column;align-items:center;">
       <span style="font-size:0.68rem;color:#f07030;margin-bottom:2px;font-weight:600;">14%</span>
-      <div style="width:18px;height:41px;background:#f07030;border-radius:2px 2px 0 0;"></div>
+      <div style="width:18px;height:52px;background:#f07030;border-radius:2px 2px 0 0;"></div>
     </div>
   </div>
   <div style="font-size:0.78rem;color:#555;margin-top:6px;text-align:center;">1</div>
@@ -165,47 +161,47 @@
   <div style="display:flex;align-items:flex-end;gap:3px;width:100%;justify-content:center;">
     <div style="display:flex;flex-direction:column;align-items:center;">
       <span style="font-size:0.68rem;color:#4a90d9;margin-bottom:2px;font-weight:600;">13%</span>
-      <div style="width:18px;height:38px;background:#4a90d9;border-radius:2px 2px 0 0;"></div>
+      <div style="width:18px;height:48px;background:#4a90d9;border-radius:2px 2px 0 0;"></div>
     </div>
     <div style="display:flex;flex-direction:column;align-items:center;">
       <span style="font-size:0.68rem;color:#f07030;margin-bottom:2px;font-weight:600;">15%</span>
-      <div style="width:18px;height:44px;background:#f07030;border-radius:2px 2px 0 0;"></div>
+      <div style="width:18px;height:56px;background:#f07030;border-radius:2px 2px 0 0;"></div>
     </div>
   </div>
   <div style="font-size:0.78rem;color:#555;margin-top:6px;text-align:center;">2</div>
 </div><div style="display:flex;flex-direction:column;align-items:center;flex:1;">
   <div style="display:flex;align-items:flex-end;gap:3px;width:100%;justify-content:center;">
     <div style="display:flex;flex-direction:column;align-items:center;">
-      <span style="font-size:0.68rem;color:#4a90d9;margin-bottom:2px;font-weight:600;">9%</span>
-      <div style="width:18px;height:26px;background:#4a90d9;border-radius:2px 2px 0 0;"></div>
+      <span style="font-size:0.68rem;color:#4a90d9;margin-bottom:2px;font-weight:600;">12%</span>
+      <div style="width:18px;height:44px;background:#4a90d9;border-radius:2px 2px 0 0;"></div>
     </div>
     <div style="display:flex;flex-direction:column;align-items:center;">
       <span style="font-size:0.68rem;color:#f07030;margin-bottom:2px;font-weight:600;">9%</span>
-      <div style="width:18px;height:26px;background:#f07030;border-radius:2px 2px 0 0;"></div>
+      <div style="width:18px;height:33px;background:#f07030;border-radius:2px 2px 0 0;"></div>
     </div>
   </div>
   <div style="font-size:0.78rem;color:#555;margin-top:6px;text-align:center;">3</div>
 </div><div style="display:flex;flex-direction:column;align-items:center;flex:1;">
   <div style="display:flex;align-items:flex-end;gap:3px;width:100%;justify-content:center;">
     <div style="display:flex;flex-direction:column;align-items:center;">
-      <span style="font-size:0.68rem;color:#4a90d9;margin-bottom:2px;font-weight:600;">12%</span>
-      <div style="width:18px;height:35px;background:#4a90d9;border-radius:2px 2px 0 0;"></div>
+      <span style="font-size:0.68rem;color:#4a90d9;margin-bottom:2px;font-weight:600;">13%</span>
+      <div style="width:18px;height:48px;background:#4a90d9;border-radius:2px 2px 0 0;"></div>
     </div>
     <div style="display:flex;flex-direction:column;align-items:center;">
       <span style="font-size:0.68rem;color:#f07030;margin-bottom:2px;font-weight:600;">23%</span>
-      <div style="width:18px;height:68px;background:#f07030;border-radius:2px 2px 0 0;"></div>
+      <div style="width:18px;height:85px;background:#f07030;border-radius:2px 2px 0 0;"></div>
     </div>
   </div>
   <div style="font-size:0.78rem;color:#555;margin-top:6px;text-align:center;">4–5</div>
 </div><div style="display:flex;flex-direction:column;align-items:center;flex:1;">
   <div style="display:flex;align-items:flex-end;gap:3px;width:100%;justify-content:center;">
     <div style="display:flex;flex-direction:column;align-items:center;">
-      <span style="font-size:0.68rem;color:#4a90d9;margin-bottom:2px;font-weight:600;">18%</span>
-      <div style="width:18px;height:53px;background:#4a90d9;border-radius:2px 2px 0 0;"></div>
+      <span style="font-size:0.68rem;color:#4a90d9;margin-bottom:2px;font-weight:600;">22%</span>
+      <div style="width:18px;height:81px;background:#4a90d9;border-radius:2px 2px 0 0;"></div>
     </div>
     <div style="display:flex;flex-direction:column;align-items:center;">
       <span style="font-size:0.68rem;color:#f07030;margin-bottom:2px;font-weight:600;">15%</span>
-      <div style="width:18px;height:44px;background:#f07030;border-radius:2px 2px 0 0;"></div>
+      <div style="width:18px;height:56px;background:#f07030;border-radius:2px 2px 0 0;"></div>
     </div>
   </div>
   <div style="font-size:0.78rem;color:#555;margin-top:6px;text-align:center;">6+</div>
@@ -215,37 +211,29 @@
 <h2>First 14 Days
   <span class="coverage-badge">Banana: 0/127 (0.0%)</span>
 </h2>
-<div class="callout"><strong>Heads up:</strong> Only 0.0% of the Banana cohort has reached 14 days yet. These numbers will shift as more users accumulate data — check back for a more stable read.</div>
+<div class="callout"><strong>Heads up:</strong> Only 0.0% of the Banana cohort has reached 14 days yet — these numbers will shift. Check back for a more stable read.</div>
 
 <table>
-  <tr><th>Metric</th><th>All prior users (n=1,955)</th><th>Banana (n=0)</th><th>Change</th></tr>
-  <tr class="highlight-row"><td>Median sessions</td><td>2</td><td>0</td><td><span class="neg">↓ -100%</span></td></tr>
-
-  <tr><td>Mean sessions</td><td>3.9</td><td>0</td><td><span class="neg">↓ -100%</span></td></tr>
-
-  <tr><td>% with ≥1 session</td><td>68.7%</td><td>0%</td><td><span class="neg">↓ -68.7 pts</span></td></tr>
-
-  <tr><td>% with ≥3 sessions</td><td>44.9%</td><td>0%</td><td><span class="neg">↓ -44.9 pts</span></td></tr>
-
-  <tr><td>% with 0 sessions</td><td>31.3%</td><td>0%</td><td><span class="pos">↓ -31.3 pts</span></td></tr>
-
-  <tr><td>Median app opens</td><td>45</td><td>0</td><td><span class="neg">↓ -100%</span></td></tr>
-
-  <tr><td>Median days with app open</td><td>7</td><td>0</td><td><span class="neg">↓ -100%</span></td></tr>
-
-  <tr><td>Median total app events</td><td>497</td><td>0</td><td><span class="neg">↓ -100%</span></td></tr>
-
+  <tr><th>Metric</th><th>All prior users (n=1,955)</th><th>Apple (n=313)</th><th>Banana (n=0)</th><th>Change (Apple→Banana)</th></tr>
+  <tr class="highlight-row"><td>Median sessions</td><td>2</td><td>3</td><td>0</td><td><span class="neg">↓ -100%</span></td></tr>
+  <tr><td>Mean sessions</td><td>3.9</td><td>4.5</td><td>0</td><td><span class="neg">↓ -100%</span></td></tr>
+  <tr><td>% with ≥1 session</td><td>68.7%</td><td>75.7%</td><td>0%</td><td><span class="neg">↓ -75.7 pts</span></td></tr>
+  <tr><td>% with ≥3 sessions</td><td>44.9%</td><td>52.7%</td><td>0%</td><td><span class="neg">↓ -52.7 pts</span></td></tr>
+  <tr><td>% with 0 sessions</td><td>31.3%</td><td>24.3%</td><td>0%</td><td><span class="pos">↓ -24.3 pts</span></td></tr>
+  <tr><td>Median app opens</td><td>45</td><td>68</td><td>0</td><td><span class="neg">↓ -100%</span></td></tr>
+  <tr><td>Median days with app open</td><td>7</td><td>10</td><td>0</td><td><span class="neg">↓ -100%</span></td></tr>
+  <tr><td>Median total app events</td><td>497</td><td>752</td><td>0</td><td><span class="neg">↓ -100%</span></td></tr>
 </table>
 
 <p style="font-size:0.85rem;color:#555;margin:16px 0 6px 0;font-weight:600;">Sessions logged — first 14 days</p>
 <div style="display:flex;gap:16px;font-size:0.78rem;color:#555;margin-bottom:8px;">
-  <span><span style="display:inline-block;width:12px;height:12px;background:#4a90d9;border-radius:2px;margin-right:4px;vertical-align:middle;"></span>All prior users</span>
+  <span><span style="display:inline-block;width:12px;height:12px;background:#4a90d9;border-radius:2px;margin-right:4px;vertical-align:middle;"></span>Apple</span>
   <span><span style="display:inline-block;width:12px;height:12px;background:#f07030;border-radius:2px;margin-right:4px;vertical-align:middle;"></span>Banana</span>
 </div><div style="display:flex;align-items:flex-end;height:120px;gap:6px;border-bottom:1px solid #e8e8e8;padding-top:16px;"><div style="display:flex;flex-direction:column;align-items:center;flex:1;">
   <div style="display:flex;align-items:flex-end;gap:3px;width:100%;justify-content:center;">
     <div style="display:flex;flex-direction:column;align-items:center;">
-      <span style="font-size:0.68rem;color:#4a90d9;margin-bottom:2px;font-weight:600;">31%</span>
-      <div style="width:18px;height:100px;background:#4a90d9;border-radius:2px 2px 0 0;"></div>
+      <span style="font-size:0.68rem;color:#4a90d9;margin-bottom:2px;font-weight:600;">24%</span>
+      <div style="width:18px;height:73px;background:#4a90d9;border-radius:2px 2px 0 0;"></div>
     </div>
     <div style="display:flex;flex-direction:column;align-items:center;">
       <span style="font-size:0.68rem;color:#f07030;margin-bottom:2px;font-weight:600;">0%</span>
@@ -256,8 +244,8 @@
 </div><div style="display:flex;flex-direction:column;align-items:center;flex:1;">
   <div style="display:flex;align-items:flex-end;gap:3px;width:100%;justify-content:center;">
     <div style="display:flex;flex-direction:column;align-items:center;">
-      <span style="font-size:0.68rem;color:#4a90d9;margin-bottom:2px;font-weight:600;">13%</span>
-      <div style="width:18px;height:42px;background:#4a90d9;border-radius:2px 2px 0 0;"></div>
+      <span style="font-size:0.68rem;color:#4a90d9;margin-bottom:2px;font-weight:600;">12%</span>
+      <div style="width:18px;height:36px;background:#4a90d9;border-radius:2px 2px 0 0;"></div>
     </div>
     <div style="display:flex;flex-direction:column;align-items:center;">
       <span style="font-size:0.68rem;color:#f07030;margin-bottom:2px;font-weight:600;">0%</span>
@@ -269,7 +257,7 @@
   <div style="display:flex;align-items:flex-end;gap:3px;width:100%;justify-content:center;">
     <div style="display:flex;flex-direction:column;align-items:center;">
       <span style="font-size:0.68rem;color:#4a90d9;margin-bottom:2px;font-weight:600;">11%</span>
-      <div style="width:18px;height:35px;background:#4a90d9;border-radius:2px 2px 0 0;"></div>
+      <div style="width:18px;height:33px;background:#4a90d9;border-radius:2px 2px 0 0;"></div>
     </div>
     <div style="display:flex;flex-direction:column;align-items:center;">
       <span style="font-size:0.68rem;color:#f07030;margin-bottom:2px;font-weight:600;">0%</span>
@@ -280,8 +268,8 @@
 </div><div style="display:flex;flex-direction:column;align-items:center;flex:1;">
   <div style="display:flex;align-items:flex-end;gap:3px;width:100%;justify-content:center;">
     <div style="display:flex;flex-direction:column;align-items:center;">
-      <span style="font-size:0.68rem;color:#4a90d9;margin-bottom:2px;font-weight:600;">7%</span>
-      <div style="width:18px;height:23px;background:#4a90d9;border-radius:2px 2px 0 0;"></div>
+      <span style="font-size:0.68rem;color:#4a90d9;margin-bottom:2px;font-weight:600;">9%</span>
+      <div style="width:18px;height:27px;background:#4a90d9;border-radius:2px 2px 0 0;"></div>
     </div>
     <div style="display:flex;flex-direction:column;align-items:center;">
       <span style="font-size:0.68rem;color:#f07030;margin-bottom:2px;font-weight:600;">0%</span>
@@ -293,7 +281,7 @@
   <div style="display:flex;align-items:flex-end;gap:3px;width:100%;justify-content:center;">
     <div style="display:flex;flex-direction:column;align-items:center;">
       <span style="font-size:0.68rem;color:#4a90d9;margin-bottom:2px;font-weight:600;">11%</span>
-      <div style="width:18px;height:35px;background:#4a90d9;border-radius:2px 2px 0 0;"></div>
+      <div style="width:18px;height:33px;background:#4a90d9;border-radius:2px 2px 0 0;"></div>
     </div>
     <div style="display:flex;flex-direction:column;align-items:center;">
       <span style="font-size:0.68rem;color:#f07030;margin-bottom:2px;font-weight:600;">0%</span>
@@ -304,8 +292,8 @@
 </div><div style="display:flex;flex-direction:column;align-items:center;flex:1;">
   <div style="display:flex;align-items:flex-end;gap:3px;width:100%;justify-content:center;">
     <div style="display:flex;flex-direction:column;align-items:center;">
-      <span style="font-size:0.68rem;color:#4a90d9;margin-bottom:2px;font-weight:600;">27%</span>
-      <div style="width:18px;height:87px;background:#4a90d9;border-radius:2px 2px 0 0;"></div>
+      <span style="font-size:0.68rem;color:#4a90d9;margin-bottom:2px;font-weight:600;">33%</span>
+      <div style="width:18px;height:100px;background:#4a90d9;border-radius:2px 2px 0 0;"></div>
     </div>
     <div style="display:flex;flex-direction:column;align-items:center;">
       <span style="font-size:0.68rem;color:#f07030;margin-bottom:2px;font-weight:600;">0%</span>
@@ -319,7 +307,7 @@
 
 
 <footer>
-  Report generated 2026-04-29 12:33 &nbsp;·&nbsp;
+  Report generated 2026-04-29 12:40 &nbsp;·&nbsp;
   Cohort: Banana (start 2026-04-18) &nbsp;·&nbsp;
   Data source: Mixpanel &nbsp;·&nbsp; Excludes Internal cohort + nextsense.io emails
 </footer>
