@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cohort Report: Apple vs Prior Users</title>
+<style>
+  body  { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+           max-width:960px;margin:0 auto;padding:40px 20px;color:#1a1a2e;background:#f9f9fb; }
+  h1    { font-size:1.6rem;border-bottom:3px solid #4a90d9;padding-bottom:10px; }
+  h2    { font-size:1.1rem;color:#2c3e50;margin-top:36px;background:#eef3fb;
+           padding:8px 12px;border-left:4px solid #4a90d9;border-radius:0 4px 4px 0; }
+  .meta { color:#777;font-size:0.85rem;margin-bottom:20px; }
+  .callout      { background:#fff3cd;border:1px solid #ffc107;border-radius:6px;
+                   padding:12px 16px;font-size:0.88rem;margin:14px 0;color:#856404; }
+  .callout strong { color:#664d03; }
+  .callout-blue { background:#cfe2ff;border-color:#4a90d9;color:#084298; }
+  .callout-blue strong { color:#052c65; }
+  .grid2  { display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0; }
+  .card   { background:white;border-radius:8px;padding:16px 20px;border:1px solid #dde3f0; }
+  .card h4 { margin:0 0 4px 0;font-size:0.85rem;color:#666;font-weight:500; }
+  .card .num { font-size:2rem;font-weight:700;color:#2c3e50; }
+  .card .sub { font-size:0.8rem;color:#888;margin-top:2px;margin-bottom:8px; }
+  table   { border-collapse:collapse;width:100%;margin:14px 0;font-size:0.91rem; }
+  th      { background:#2c3e50;color:white;padding:9px 14px;text-align:left;font-weight:500; }
+  td      { padding:8px 14px;border-bottom:1px solid #e8e8e8; }
+  tr:nth-child(even) { background:#f5f8ff; }
+  .highlight-row td { background:#fffbea !important;font-weight:600; }
+  .pos  { color:#198754;font-weight:600; }
+  .neg  { color:#dc3545;font-weight:600; }
+  .neu  { color:#6c757d; }
+  .coverage-badge { display:inline-block;background:#e9ecef;border-radius:10px;
+                     padding:2px 10px;font-size:0.8rem;color:#495057;margin-left:8px; }
+  footer { margin-top:48px;font-size:0.8rem;color:#aaa;border-top:1px solid #e0e0e0;padding-top:16px; }
+</style>
+</head>
+<body>
+<h1>Cohort Report — <em>Apple</em> vs Prior Users</h1>
+<p class="meta">
+  Analysis date: 2026-05-04 &nbsp;·&nbsp;
+  Apple cohort start: 2026-03-26 &nbsp;·&nbsp;
+  Smartbuds app &nbsp;·&nbsp; Internal users excluded
+</p>
+
+<!-- ── COHORT SIZE CARDS ── -->
+<div class="grid2">
+  <div class="card">
+    <h4>🔵 ALL PRIOR USERS</h4>
+    <div class="num">1,642</div>
+    <div class="sub">Users who onboarded before 2026-03-26</div>
+  </div>
+  <div class="card">
+    <h4>🍎 APPLE</h4>
+    <div class="num">337</div>
+    <div class="sub">Users who onboarded 2026-03-26 or later</div>
+  </div>
+</div>
+
+<div class="callout callout-blue"><strong>Data coverage:</strong> Apple: 337/337 have 7-day data (100.0%), 337/337 have 14-day (100.0%), 177/337 have 28-day / Rot Rate (52.5%). All prior-cohort users qualify for all windows.</div>
+
+<!-- ── GOOD FRUIT RATE & ROT RATE ── -->
+<h2>Habit + Durability Signals</h2>
+<div class="callout">
+  <strong>Good Fruit Rate</strong> = % of cohort who logged ≥5 sessions in their first 14 days — the habit-formation signal. &nbsp;|&nbsp;
+  <strong>Rot Rate</strong> = of those good-fruit users, % who went inactive (0 sessions) in days 15–28 — the durability signal.
+  Apple baseline hypothesis: ~35% Good Fruit Rate.
+</div>
+<div class="grid2">
+  <div class="card">
+    <h4>Good Fruit Rate</h4>
+    <div style="font-size:0.78rem;color:#888;margin-bottom:12px;">% reaching ≥5 sessions in first 14 days &nbsp;·&nbsp; 14-day eligible users only</div>
+    <div style="display:flex;align-items:baseline;gap:24px;flex-wrap:wrap;">
+      <div>
+        <div style="font-size:0.72rem;font-weight:700;color:#4a90d9;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;">All prior users</div>
+        <div style="font-size:2rem;font-weight:700;color:#2c3e50;">30.2%</div>
+        <div style="font-size:0.78rem;color:#999;">n=1642</div>
+      </div><div>
+        <div style="font-size:0.72rem;font-weight:700;color:#f07030;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;">Apple</div>
+        <div style="font-size:2rem;font-weight:700;color:#2c3e50;">36.2%</div>
+        <div style="font-size:0.78rem;color:#999;">n=337</div>
+      </div><div style="font-size:1.3rem;font-weight:700;"><span class="pos">↑ +6.0 pts</span></div>
+    </div>
+    <div style="margin-top:10px;font-size:0.78rem;color:#999;border-top:1px solid #f0f0f0;padding-top:8px;">Baseline hypothesis (Apple): ~35%</div>
+  </div>
+  <div class="card">
+    <h4>Rot Rate</h4>
+    <div style="font-size:0.78rem;color:#888;margin-bottom:12px;">Of good-fruit users, % with 0 sessions in days 15–28 &nbsp;·&nbsp; 28-day eligible only</div>
+    <div style="display:flex;align-items:baseline;gap:24px;flex-wrap:wrap;">
+      <div>
+        <div style="font-size:0.72rem;font-weight:700;color:#4a90d9;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;">All prior users</div>
+        <div style="font-size:2rem;font-weight:700;color:#2c3e50;">32.9%</div>
+        <div style="font-size:0.78rem;color:#999;">n=496 good fruit</div>
+      </div><div>
+        <div style="font-size:0.72rem;font-weight:700;color:#f07030;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;">Apple</div>
+        <div style="font-size:2rem;font-weight:700;color:#2c3e50;">33.3%</div>
+        <div style="font-size:0.78rem;color:#999;">n=122 good fruit</div>
+      </div>
+    </div>
+    <div style="margin-top:10px;font-size:0.78rem;color:#856404;border-top:1px solid #f0f0f0;padding-top:8px;">Only 52.5% of Apple users have reached 28 days — check back for a more stable read.</div>
+  </div>
+</div>
+
+<!-- ── FIRST 7 DAYS ── -->
+<h2>First 7 Days
+  <span class="coverage-badge">Apple: 337/337 (100.0%)</span>
+</h2>
+
+<table>
+  <tr><th>Metric</th><th>All prior users (n=1,642)</th><th>Apple (n=337)</th><th>Change</th></tr>
+  <tr class="highlight-row"><td>Median sessions</td><td>2.0</td><td>2</td><td><span class="pos">↑ +0%</span></td></tr>
+  <tr><td>Mean sessions</td><td>2.5</td><td>2.9</td><td><span class="pos">↑ +16%</span></td></tr>
+  <tr><td>% with ≥1 session</td><td>64.2%</td><td>73.3%</td><td><span class="pos">↑ +9.1 pts</span></td></tr>
+  <tr><td>% with ≥3 sessions</td><td>37.9%</td><td>47.5%</td><td><span class="pos">↑ +9.6 pts</span></td></tr>
+  <tr><td>% with 0 sessions</td><td>35.8%</td><td>26.7%</td><td><span class="pos">↓ -9.1 pts</span></td></tr>
+  <tr><td>Median app opens</td><td>28.0</td><td>39</td><td><span class="pos">↑ +39%</span></td></tr>
+  <tr><td>Median days with app open</td><td>4.0</td><td>6</td><td><span class="pos">↑ +50%</span></td></tr>
+  <tr><td>Median total app events</td><td>349.0</td><td>572</td><td><span class="pos">↑ +64%</span></td></tr>
+</table>
+
+<p style="font-size:0.85rem;color:#555;margin:16px 0 6px 0;font-weight:600;">Sessions logged — first 7 days</p>
+<div style="display:flex;gap:16px;font-size:0.78rem;color:#555;margin-bottom:8px;">
+  <span><span style="display:inline-block;width:12px;height:12px;background:#4a90d9;border-radius:2px;margin-right:4px;vertical-align:middle;"></span>All prior users</span>
+  <span><span style="display:inline-block;width:12px;height:12px;background:#f07030;border-radius:2px;margin-right:4px;vertical-align:middle;"></span>Apple</span>
+</div><div style="display:flex;align-items:flex-end;height:120px;gap:6px;border-bottom:1px solid #e8e8e8;padding-top:16px;"><div style="display:flex;flex-direction:column;align-items:center;flex:1;">
+  <div style="display:flex;align-items:flex-end;gap:3px;width:100%;justify-content:center;">
+    <div style="display:flex;flex-direction:column;align-items:center;">
+      <span style="font-size:0.68rem;color:#4a90d9;margin-bottom:2px;font-weight:600;">36%</span>
+      <div style="width:18px;height:100px;background:#4a90d9;border-radius:2px 2px 0 0;"></div>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center;">
+      <span style="font-size:0.68rem;color:#f07030;margin-bottom:2px;font-weight:600;">27%</span>
+      <div style="width:18px;height:75px;background:#f07030;border-radius:2px 2px 0 0;"></div>
+    </div>
+  </div>
+  <div style="font-size:0.78rem;color:#555;margin-top:6px;text-align:center;">0</div>
+</div><div style="display:flex;flex-direction:column;align-items:center;flex:1;">
+  <div style="display:flex;align-items:flex-end;gap:3px;width:100%;justify-content:center;">
+    <div style="display:flex;flex-direction:column;align-items:center;">
+      <span style="font-size:0.68rem;color:#4a90d9;margin-bottom:2px;font-weight:600;">14%</span>
+      <div style="width:18px;height:39px;background:#4a90d9;border-radius:2px 2px 0 0;"></div>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center;">
+      <span style="font-size:0.68rem;color:#f07030;margin-bottom:2px;font-weight:600;">13%</span>
+      <div style="width:18px;height:36px;background:#f07030;border-radius:2px 2px 0 0;"></div>
+    </div>
+  </div>
+  <div style="font-size:0.78rem;color:#555;margin-top:6px;text-align:center;">1</div>
+</div><div style="display:flex;flex-direction:column;align-items:center;flex:1;">
+  <div style="display:flex;align-items:flex-end;gap:3px;width:100%;justify-content:center;">
+    <div style="display:flex;flex-direction:column;align-items:center;">
+      <span style="font-size:0.68rem;color:#4a90d9;margin-bottom:2px;font-weight:600;">12%</span>
+      <div style="width:18px;height:33px;background:#4a90d9;border-radius:2px 2px 0 0;"></div>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center;">
+      <span style="font-size:0.68rem;color:#f07030;margin-bottom:2px;font-weight:600;">13%</span>
+      <div style="width:18px;height:36px;background:#f07030;border-radius:2px 2px 0 0;"></div>
+    </div>
+  </div>
+  <div style="font-size:0.78rem;color:#555;margin-top:6px;text-align:center;">2</div>
+</div><div style="display:flex;flex-direction:column;align-items:center;flex:1;">
+  <div style="display:flex;align-items:flex-end;gap:3px;width:100%;justify-content:center;">
+    <div style="display:flex;flex-direction:column;align-items:center;">
+      <span style="font-size:0.68rem;color:#4a90d9;margin-bottom:2px;font-weight:600;">8%</span>
+      <div style="width:18px;height:22px;background:#4a90d9;border-radius:2px 2px 0 0;"></div>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center;">
+      <span style="font-size:0.68rem;color:#f07030;margin-bottom:2px;font-weight:600;">12%</span>
+      <div style="width:18px;height:33px;background:#f07030;border-radius:2px 2px 0 0;"></div>
+    </div>
+  </div>
+  <div style="font-size:0.78rem;color:#555;margin-top:6px;text-align:center;">3</div>
+</div><div style="display:flex;flex-direction:column;align-items:center;flex:1;">
+  <div style="display:flex;align-items:flex-end;gap:3px;width:100%;justify-content:center;">
+    <div style="display:flex;flex-direction:column;align-items:center;">
+      <span style="font-size:0.68rem;color:#4a90d9;margin-bottom:2px;font-weight:600;">12%</span>
+      <div style="width:18px;height:33px;background:#4a90d9;border-radius:2px 2px 0 0;"></div>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center;">
+      <span style="font-size:0.68rem;color:#f07030;margin-bottom:2px;font-weight:600;">13%</span>
+      <div style="width:18px;height:36px;background:#f07030;border-radius:2px 2px 0 0;"></div>
+    </div>
+  </div>
+  <div style="font-size:0.78rem;color:#555;margin-top:6px;text-align:center;">4–5</div>
+</div><div style="display:flex;flex-direction:column;align-items:center;flex:1;">
+  <div style="display:flex;align-items:flex-end;gap:3px;width:100%;justify-content:center;">
+    <div style="display:flex;flex-direction:column;align-items:center;">
+      <span style="font-size:0.68rem;color:#4a90d9;margin-bottom:2px;font-weight:600;">18%</span>
+      <div style="width:18px;height:50px;background:#4a90d9;border-radius:2px 2px 0 0;"></div>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center;">
+      <span style="font-size:0.68rem;color:#f07030;margin-bottom:2px;font-weight:600;">22%</span>
+      <div style="width:18px;height:61px;background:#f07030;border-radius:2px 2px 0 0;"></div>
+    </div>
+  </div>
+  <div style="font-size:0.78rem;color:#555;margin-top:6px;text-align:center;">6+</div>
+</div></div>
+
+<!-- ── FIRST 14 DAYS ── -->
+<h2>First 14 Days
+  <span class="coverage-badge">Apple: 337/337 (100.0%)</span>
+</h2>
+
+
+<table>
+  <tr><th>Metric</th><th>All prior users (n=1,642)</th><th>Apple (n=337)</th><th>Change</th></tr>
+  <tr class="highlight-row"><td>Median sessions</td><td>2.0</td><td>3</td><td><span class="pos">↑ +50%</span></td></tr>
+  <tr><td>Mean sessions</td><td>3.7</td><td>4.4</td><td><span class="pos">↑ +19%</span></td></tr>
+  <tr><td>% with ≥1 session</td><td>67.4%</td><td>74.8%</td><td><span class="pos">↑ +7.4 pts</span></td></tr>
+  <tr><td>% with ≥3 sessions</td><td>43.4%</td><td>52.2%</td><td><span class="pos">↑ +8.8 pts</span></td></tr>
+  <tr><td>% with 0 sessions</td><td>32.6%</td><td>25.2%</td><td><span class="pos">↓ -7.4 pts</span></td></tr>
+  <tr><td>Median app opens</td><td>42.0</td><td>68</td><td><span class="pos">↑ +62%</span></td></tr>
+  <tr><td>Median days with app open</td><td>6.0</td><td>9</td><td><span class="pos">↑ +50%</span></td></tr>
+  <tr><td>Median total app events</td><td>458.5</td><td>704</td><td><span class="pos">↑ +54%</span></td></tr>
+</table>
+
+<p style="font-size:0.85rem;color:#555;margin:16px 0 6px 0;font-weight:600;">Sessions logged — first 14 days</p>
+<div style="display:flex;gap:16px;font-size:0.78rem;color:#555;margin-bottom:8px;">
+  <span><span style="display:inline-block;width:12px;height:12px;background:#4a90d9;border-radius:2px;margin-right:4px;vertical-align:middle;"></span>All prior users</span>
+  <span><span style="display:inline-block;width:12px;height:12px;background:#f07030;border-radius:2px;margin-right:4px;vertical-align:middle;"></span>Apple</span>
+</div><div style="display:flex;align-items:flex-end;height:120px;gap:6px;border-bottom:1px solid #e8e8e8;padding-top:16px;"><div style="display:flex;flex-direction:column;align-items:center;flex:1;">
+  <div style="display:flex;align-items:flex-end;gap:3px;width:100%;justify-content:center;">
+    <div style="display:flex;flex-direction:column;align-items:center;">
+      <span style="font-size:0.68rem;color:#4a90d9;margin-bottom:2px;font-weight:600;">33%</span>
+      <div style="width:18px;height:100px;background:#4a90d9;border-radius:2px 2px 0 0;"></div>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center;">
+      <span style="font-size:0.68rem;color:#f07030;margin-bottom:2px;font-weight:600;">25%</span>
+      <div style="width:18px;height:76px;background:#f07030;border-radius:2px 2px 0 0;"></div>
+    </div>
+  </div>
+  <div style="font-size:0.78rem;color:#555;margin-top:6px;text-align:center;">0</div>
+</div><div style="display:flex;flex-direction:column;align-items:center;flex:1;">
+  <div style="display:flex;align-items:flex-end;gap:3px;width:100%;justify-content:center;">
+    <div style="display:flex;flex-direction:column;align-items:center;">
+      <span style="font-size:0.68rem;color:#4a90d9;margin-bottom:2px;font-weight:600;">13%</span>
+      <div style="width:18px;height:39px;background:#4a90d9;border-radius:2px 2px 0 0;"></div>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center;">
+      <span style="font-size:0.68rem;color:#f07030;margin-bottom:2px;font-weight:600;">12%</span>
+      <div style="width:18px;height:36px;background:#f07030;border-radius:2px 2px 0 0;"></div>
+    </div>
+  </div>
+  <div style="font-size:0.78rem;color:#555;margin-top:6px;text-align:center;">1</div>
+</div><div style="display:flex;flex-direction:column;align-items:center;flex:1;">
+  <div style="display:flex;align-items:flex-end;gap:3px;width:100%;justify-content:center;">
+    <div style="display:flex;flex-direction:column;align-items:center;">
+      <span style="font-size:0.68rem;color:#4a90d9;margin-bottom:2px;font-weight:600;">11%</span>
+      <div style="width:18px;height:33px;background:#4a90d9;border-radius:2px 2px 0 0;"></div>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center;">
+      <span style="font-size:0.68rem;color:#f07030;margin-bottom:2px;font-weight:600;">11%</span>
+      <div style="width:18px;height:33px;background:#f07030;border-radius:2px 2px 0 0;"></div>
+    </div>
+  </div>
+  <div style="font-size:0.78rem;color:#555;margin-top:6px;text-align:center;">2</div>
+</div><div style="display:flex;flex-direction:column;align-items:center;flex:1;">
+  <div style="display:flex;align-items:flex-end;gap:3px;width:100%;justify-content:center;">
+    <div style="display:flex;flex-direction:column;align-items:center;">
+      <span style="font-size:0.68rem;color:#4a90d9;margin-bottom:2px;font-weight:600;">7%</span>
+      <div style="width:18px;height:21px;background:#4a90d9;border-radius:2px 2px 0 0;"></div>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center;">
+      <span style="font-size:0.68rem;color:#f07030;margin-bottom:2px;font-weight:600;">9%</span>
+      <div style="width:18px;height:27px;background:#f07030;border-radius:2px 2px 0 0;"></div>
+    </div>
+  </div>
+  <div style="font-size:0.78rem;color:#555;margin-top:6px;text-align:center;">3</div>
+</div><div style="display:flex;flex-direction:column;align-items:center;flex:1;">
+  <div style="display:flex;align-items:flex-end;gap:3px;width:100%;justify-content:center;">
+    <div style="display:flex;flex-direction:column;align-items:center;">
+      <span style="font-size:0.68rem;color:#4a90d9;margin-bottom:2px;font-weight:600;">11%</span>
+      <div style="width:18px;height:33px;background:#4a90d9;border-radius:2px 2px 0 0;"></div>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center;">
+      <span style="font-size:0.68rem;color:#f07030;margin-bottom:2px;font-weight:600;">11%</span>
+      <div style="width:18px;height:33px;background:#f07030;border-radius:2px 2px 0 0;"></div>
+    </div>
+  </div>
+  <div style="font-size:0.78rem;color:#555;margin-top:6px;text-align:center;">4–5</div>
+</div><div style="display:flex;flex-direction:column;align-items:center;flex:1;">
+  <div style="display:flex;align-items:flex-end;gap:3px;width:100%;justify-content:center;">
+    <div style="display:flex;flex-direction:column;align-items:center;">
+      <span style="font-size:0.68rem;color:#4a90d9;margin-bottom:2px;font-weight:600;">26%</span>
+      <div style="width:18px;height:79px;background:#4a90d9;border-radius:2px 2px 0 0;"></div>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center;">
+      <span style="font-size:0.68rem;color:#f07030;margin-bottom:2px;font-weight:600;">32%</span>
+      <div style="width:18px;height:97px;background:#f07030;border-radius:2px 2px 0 0;"></div>
+    </div>
+  </div>
+  <div style="font-size:0.78rem;color:#555;margin-top:6px;text-align:center;">6+</div>
+</div></div>
+
+<!-- ── WHAT WAS NEW ── -->
+<h2>What Was New in Apple</h2>
+<div style="background:white;border-radius:8px;padding:20px 24px;border:1px solid #dde3f0;">
+<h3 style="font-size:0.9rem;color:#2c3e50;margin:16px 0 8px 0;">New Features</h3><ul style="margin:0;padding-left:20px;line-height:1.8;font-size:0.88rem;color:#444;"><li>Adaptive Audio (Alpha) — real-time audio system that responds to sleep state, gated behind Labs toggle</li><li>Surveys & NPS — new survey system with NPS, insight kit surveys at Day 7 and Day 15</li><li>Day 2/4 Experience & Survey flows</li><li>Feature Intros — guided onboarding for ear adjustment, comfort check-in, and tips/wings selection</li><li>Signal Quality Tracking — EEG signal quality monitoring with anomaly detection</li><li>Tutorial Video Streaming — migrated from bundled assets to Firebase Storage, reducing app size</li><li>Neuro Tetris demo added to Labs</li><li>Onboard Audio During Deep Sleep — audio stimulation now supported during deep sleep phase</li><li>ZenDesk Support — migrated support links from Intercom to ZenDesk</li></ul><h3 style="font-size:0.9rem;color:#2c3e50;margin:16px 0 8px 0;">Stability & Bug Fixes</h3><ul style="margin:0;padding-left:20px;line-height:1.8;font-size:0.88rem;color:#444;"><li>Fixed main thread deadlock in CoreData; reduced SwiftUI re-render pressure</li><li>Improved CPU usage in sleep staging algorithm pipeline</li><li>Fixed alarm reliability (switched to DispatchSourceTimer)</li><li>Fixed Live Activity recovery and state caching</li><li>Numerous BLE reliability fixes — reconnection, RACE command race conditions, streaming restore</li><li>Fixed UI hangs during cloud sync; blocked sleep stats fetch during sync</li><li>Fixed session restore edge cases (streaming mode, sleep phase, app kill)</li><li>Fixed audio issues — ducking during alarms, soundscape resume, adaptive audio pausing</li></ul><h3 style="font-size:0.9rem;color:#2c3e50;margin:16px 0 8px 0;">Infrastructure</h3><ul style="margin:0;padding-left:20px;line-height:1.8;font-size:0.88rem;color:#444;"><li>Dependency injection and unit tests across core ViewModels and managers</li><li>Simulator target for running tests without hardware</li><li>CI pipeline on self-hosted ARM64 runner with scoped SwiftLint</li><li>AI-assisted Linear ticket triage pipeline</li></ul>
+</div>
+
+
+<footer>
+  Report generated 2026-05-04 10:12 &nbsp;·&nbsp;
+  Cohort: Apple (start 2026-03-26) &nbsp;·&nbsp;
+  Data source: Mixpanel &nbsp;·&nbsp; Excludes Internal cohort + nextsense.io emails
+</footer>
+</body>
+</html>
