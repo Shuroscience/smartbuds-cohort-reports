@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Cohort Report: Cantaloupe vs Banana vs Prior Users</title>
+<title>Cohort Report: Cantaloupe vs Banana vs Apple vs Prior Users</title>
 <style>
   body  { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
            max-width:960px;margin:0 auto;padding:40px 20px;color:#1a1a2e;background:#f9f9fb; }
@@ -34,7 +34,7 @@
 </style>
 </head>
 <body>
-<h1>Cohort Report — <em>Cantaloupe</em> vs <em>Banana</em> vs All Prior Users</h1>
+<h1>Cohort Report — <em>Cantaloupe</em> vs <em>Banana</em> vs <em>Apple</em> vs All Prior Users</h1>
 <p class="meta">
   Analysis date: 2026-05-04 &nbsp;·&nbsp;
   Cantaloupe cohort start: 2026-05-02 &nbsp;·&nbsp;
@@ -42,11 +42,16 @@
 </p>
 
 <!-- ── COHORT SIZE CARDS ── -->
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin:16px 0;">
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:12px;margin:16px 0;">
   <div class="card">
     <h4>🔵 ALL PRIOR USERS</h4>
     <div class="num">2,152</div>
-    <div class="sub">Onboarded before 2026-04-18</div>
+    <div class="sub">Onboarded before 2026-03-26</div>
+  </div>
+  <div class="card">
+    <h4>🍎 APPLE</h4>
+    <div class="num">337</div>
+    <div class="sub">Onboarded 2026-03-26–2026-04-18</div>
   </div>
   <div class="card">
     <h4>🍌 BANANA</h4>
@@ -60,7 +65,7 @@
   </div>
 </div>
 
-<div class="callout callout-blue"><strong>Data coverage:</strong> Banana: 110/173 have 7-day data (63.6%), 25/173 have 14-day (14.5%). &nbsp;·&nbsp; Cantaloupe: 0/60 have 7-day data (0.0%), 0/60 have 14-day (0.0%), 0/60 have 28-day / Rot Rate (0.0%). All prior-cohort users qualify for all windows.</div>
+<div class="callout callout-blue"><strong>Data coverage:</strong> Apple: 337/337 have 7-day data (100.0%), 337/337 have 14-day (100.0%). &nbsp;·&nbsp; Banana: 110/173 have 7-day data (63.6%), 25/173 have 14-day (14.5%). &nbsp;·&nbsp; Cantaloupe: 0/60 have 7-day data (0.0%), 0/60 have 14-day (0.0%), 0/60 have 28-day / Rot Rate (0.0%). All prior-cohort users qualify for all windows.</div>
 
 <!-- ── GOOD FRUIT RATE & ROT RATE ── -->
 <h2>Habit + Durability Signals</h2>
@@ -78,6 +83,10 @@
         <div style="font-size:0.72rem;font-weight:700;color:#4a90d9;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;">All prior users</div>
         <div style="font-size:2rem;font-weight:700;color:#2c3e50;">31.2%</div>
         <div style="font-size:0.78rem;color:#999;">n=2004</div>
+      </div><div>
+        <div style="font-size:0.72rem;font-weight:700;color:#9b59b6;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;">Apple</div>
+        <div style="font-size:2rem;font-weight:700;color:#2c3e50;">36.2%</div>
+        <div style="font-size:0.78rem;color:#999;">n=337</div>
       </div><div>
         <div style="font-size:0.72rem;font-weight:700;color:#27ae60;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;">Banana</div>
         <div style="font-size:2rem;font-weight:700;color:#2c3e50;">28.0%</div>
@@ -99,6 +108,10 @@
         <div style="font-size:2rem;font-weight:700;color:#2c3e50;">32.9%</div>
         <div style="font-size:0.78rem;color:#999;">n=625 good fruit</div>
       </div><div>
+        <div style="font-size:0.72rem;font-weight:700;color:#9b59b6;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;">Apple</div>
+        <div style="font-size:2rem;font-weight:700;color:#2c3e50;">33.3%</div>
+        <div style="font-size:0.78rem;color:#999;">n=122 good fruit</div>
+      </div><div>
         <div style="font-size:0.72rem;font-weight:700;color:#27ae60;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;">Banana</div>
         <div style="font-size:1.2rem;font-weight:700;color:#2c3e50;">—</div>
         <div style="font-size:0.78rem;color:#999;">n=7 good fruit</div>
@@ -118,15 +131,15 @@
 </h2>
 
 <table>
-  <tr><th>Metric</th><th>All prior users (n=2,089)</th><th>Banana (n=110)</th><th>Cantaloupe (n=0)</th><th>Change (Banana→Cantaloupe)</th></tr>
-  <tr class="highlight-row"><td>Median sessions</td><td>2</td><td>2.0</td><td>0</td><td><span class="neg">↓ -100%</span></td></tr>
-  <tr><td>Mean sessions</td><td>2.5</td><td>2.5</td><td>0</td><td><span class="neg">↓ -100%</span></td></tr>
-  <tr><td>% with ≥1 session</td><td>66.0%</td><td>70.0%</td><td>0%</td><td><span class="neg">↓ -70.0 pts</span></td></tr>
-  <tr><td>% with ≥3 sessions</td><td>39.5%</td><td>39.1%</td><td>0%</td><td><span class="neg">↓ -39.1 pts</span></td></tr>
-  <tr><td>% with 0 sessions</td><td>34.0%</td><td>30.0%</td><td>0%</td><td><span class="pos">↓ -30.0 pts</span></td></tr>
-  <tr><td>Median app opens</td><td>30</td><td>36.5</td><td>0</td><td><span class="neg">↓ -100%</span></td></tr>
-  <tr><td>Median days with app open</td><td>4</td><td>5.5</td><td>0</td><td><span class="neg">↓ -100%</span></td></tr>
-  <tr><td>Median total app events</td><td>378</td><td>357.0</td><td>0</td><td><span class="neg">↓ -100%</span></td></tr>
+  <tr><th>Metric</th><th>All prior users (n=2,089)</th><th>Apple (n=337)</th><th>Banana (n=110)</th><th>Cantaloupe (n=0)</th><th>Change (Banana→Cantaloupe)</th></tr>
+  <tr class="highlight-row"><td>Median sessions</td><td>2</td><td>2</td><td>2.0</td><td>0</td><td><span class="neg">↓ -100%</span></td></tr>
+  <tr><td>Mean sessions</td><td>2.5</td><td>2.9</td><td>2.5</td><td>0</td><td><span class="neg">↓ -100%</span></td></tr>
+  <tr><td>% with ≥1 session</td><td>66.0%</td><td>73.3%</td><td>70.0%</td><td>0%</td><td><span class="neg">↓ -70.0 pts</span></td></tr>
+  <tr><td>% with ≥3 sessions</td><td>39.5%</td><td>47.5%</td><td>39.1%</td><td>0%</td><td><span class="neg">↓ -39.1 pts</span></td></tr>
+  <tr><td>% with 0 sessions</td><td>34.0%</td><td>26.7%</td><td>30.0%</td><td>0%</td><td><span class="pos">↓ -30.0 pts</span></td></tr>
+  <tr><td>Median app opens</td><td>30</td><td>39</td><td>36.5</td><td>0</td><td><span class="neg">↓ -100%</span></td></tr>
+  <tr><td>Median days with app open</td><td>4</td><td>6</td><td>5.5</td><td>0</td><td><span class="neg">↓ -100%</span></td></tr>
+  <tr><td>Median total app events</td><td>378</td><td>572</td><td>357.0</td><td>0</td><td><span class="neg">↓ -100%</span></td></tr>
 </table>
 
 <p style="font-size:0.85rem;color:#555;margin:16px 0 6px 0;font-weight:600;">Sessions logged — first 7 days</p>
@@ -214,15 +227,15 @@
 <div class="callout"><strong>Heads up:</strong> Only 0.0% of the Cantaloupe cohort has reached 14 days yet — these numbers will shift. Check back for a more stable read.</div>
 
 <table>
-  <tr><th>Metric</th><th>All prior users (n=2,004)</th><th>Banana (n=25)</th><th>Cantaloupe (n=0)</th><th>Change (Banana→Cantaloupe)</th></tr>
-  <tr class="highlight-row"><td>Median sessions</td><td>2.0</td><td>2</td><td>0</td><td><span class="neg">↓ -100%</span></td></tr>
-  <tr><td>Mean sessions</td><td>3.9</td><td>3.9</td><td>0</td><td><span class="neg">↓ -100%</span></td></tr>
-  <tr><td>% with ≥1 session</td><td>68.7%</td><td>76.0%</td><td>0%</td><td><span class="neg">↓ -76.0 pts</span></td></tr>
-  <tr><td>% with ≥3 sessions</td><td>44.9%</td><td>48.0%</td><td>0%</td><td><span class="neg">↓ -48.0 pts</span></td></tr>
-  <tr><td>% with 0 sessions</td><td>31.3%</td><td>24.0%</td><td>0%</td><td><span class="pos">↓ -24.0 pts</span></td></tr>
-  <tr><td>Median app opens</td><td>46.0</td><td>47</td><td>0</td><td><span class="neg">↓ -100%</span></td></tr>
-  <tr><td>Median days with app open</td><td>7.0</td><td>8</td><td>0</td><td><span class="neg">↓ -100%</span></td></tr>
-  <tr><td>Median total app events</td><td>497.5</td><td>628</td><td>0</td><td><span class="neg">↓ -100%</span></td></tr>
+  <tr><th>Metric</th><th>All prior users (n=2,004)</th><th>Apple (n=337)</th><th>Banana (n=25)</th><th>Cantaloupe (n=0)</th><th>Change (Banana→Cantaloupe)</th></tr>
+  <tr class="highlight-row"><td>Median sessions</td><td>2.0</td><td>3</td><td>2</td><td>0</td><td><span class="neg">↓ -100%</span></td></tr>
+  <tr><td>Mean sessions</td><td>3.9</td><td>4.4</td><td>3.9</td><td>0</td><td><span class="neg">↓ -100%</span></td></tr>
+  <tr><td>% with ≥1 session</td><td>68.7%</td><td>74.8%</td><td>76.0%</td><td>0%</td><td><span class="neg">↓ -76.0 pts</span></td></tr>
+  <tr><td>% with ≥3 sessions</td><td>44.9%</td><td>52.2%</td><td>48.0%</td><td>0%</td><td><span class="neg">↓ -48.0 pts</span></td></tr>
+  <tr><td>% with 0 sessions</td><td>31.3%</td><td>25.2%</td><td>24.0%</td><td>0%</td><td><span class="pos">↓ -24.0 pts</span></td></tr>
+  <tr><td>Median app opens</td><td>46.0</td><td>68</td><td>47</td><td>0</td><td><span class="neg">↓ -100%</span></td></tr>
+  <tr><td>Median days with app open</td><td>7.0</td><td>9</td><td>8</td><td>0</td><td><span class="neg">↓ -100%</span></td></tr>
+  <tr><td>Median total app events</td><td>497.5</td><td>704</td><td>628</td><td>0</td><td><span class="neg">↓ -100%</span></td></tr>
 </table>
 
 <p style="font-size:0.85rem;color:#555;margin:16px 0 6px 0;font-weight:600;">Sessions logged — first 14 days</p>
@@ -307,7 +320,7 @@
 
 
 <footer>
-  Report generated 2026-05-04 16:10 &nbsp;·&nbsp;
+  Report generated 2026-05-05 10:34 &nbsp;·&nbsp;
   Cohort: Cantaloupe (start 2026-05-02) &nbsp;·&nbsp;
   Data source: Mixpanel &nbsp;·&nbsp; Excludes Internal cohort + nextsense.io emails
 </footer>
