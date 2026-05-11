@@ -114,7 +114,7 @@ function main() {
       if (dayIdx < acc.min_day) acc.min_day = dayIdx;
       if (!acc.days[dayIdx]) acc.days[dayIdx] = {n: 0, s: 0, o: 0};
       acc.days[dayIdx].n++;
-      if (e.name === 'sleep_session_started' || e.name === 'meditation_session_end') acc.days[dayIdx].s = 1;  // flag: 1 session per day (sleep or meditation)
+      if (e.name === 'sleep_session_started' || (e.name === 'meditation_session_end' && e.properties.duration_minutes > 1)) acc.days[dayIdx].s = 1;  // flag: 1 session per day (sleep or meditation >1 min)
       if (e.name === 'enter_home_screen') acc.days[dayIdx].o++;
     }
     return acc;
