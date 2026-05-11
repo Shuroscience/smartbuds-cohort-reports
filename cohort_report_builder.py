@@ -114,7 +114,7 @@ function main() {
       if (dayIdx < acc.min_day) acc.min_day = dayIdx;
       if (!acc.days[dayIdx]) acc.days[dayIdx] = {n: 0, s: 0, o: 0};
       acc.days[dayIdx].n++;
-      if (e.name === 'sleep_session_started') acc.days[dayIdx].s = 1;  // flag: 1 session per day
+      if (e.name === 'sleep_session_started' || e.name === 'meditation_session_end') acc.days[dayIdx].s = 1;  // flag: 1 session per day (sleep or meditation)
       if (e.name === 'enter_home_screen') acc.days[dayIdx].o++;
     }
     return acc;
@@ -819,7 +819,7 @@ def generate_html(
 <!-- ── GOOD FRUIT RATE & ROT RATE ── -->
 <h2>Habit + Durability Signals</h2>
 <div class="callout">
-  <strong>Good Fruit Rate</strong> = % of cohort who logged ≥5 sessions in their first 14 days — the habit-formation signal. &nbsp;|&nbsp;
+  <strong>Good Fruit Rate</strong> = % of cohort who logged ≥5 sessions (sleep or meditation) in their first 14 days — the habit-formation signal. &nbsp;|&nbsp;
   <strong>Rot Rate</strong> = of those good-fruit users, % who went inactive (0 sessions) in days 15–28 — the durability signal.
   Apple baseline hypothesis: ~35% Good Fruit Rate.
 </div>
